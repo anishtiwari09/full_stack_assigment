@@ -1,0 +1,19 @@
+.container {
+    display:flex;
+    gap:2rem;
+    justify-content: right;
+    width:80%;
+    margin:2rem auto;
+}
+.container > div{
+border:1px solid black;
+padding:10px;
+border-radius:5px;
+cursor: pointer;
+}
+.container > div:hover{
+    background-color: aqua;
+}
+.container .selectedTab{
+    background-color: lawngreen;
+}

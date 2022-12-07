@@ -1,0 +1,29 @@
+.container{
+    display:flex;
+   align-items: center;
+    flex-direction: column;
+    gap:0.8rem;
+    margin-top: 2rem;
+}
+.container .inputBox
+{
+    height:45px;
+    border-radius:20px;
+    min-width:400px;
+outline: 1;
+border: 1;
+    padding:15px;
+}
+.container .bolderFont{
+    font-size: 20px;
+    font-weight: bold;
+}
+.container input[type="submit"]{
+    width:150px;
+    padding:10px;
+    border-radius: 10px;
+    border: 0;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+}
