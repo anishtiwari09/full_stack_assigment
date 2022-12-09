@@ -1,5 +1,6 @@
 import axios from "axios"
-const Base_Url="http://localhost:5555/"
+const Base_Url=process.env.REACT_APP_Base_Url
+
 
 export function getQuestionData(quizId,token){
   
