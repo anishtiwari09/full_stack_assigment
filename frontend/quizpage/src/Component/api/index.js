@@ -1,8 +1,6 @@
 import axios from "axios"
-import { Base_Url } from "../../../config";
 
-
-
+const Base_Url="https://3.88.164.93:8080/"
 export function getQuestionData(quizId,token){
   
   var config = {
