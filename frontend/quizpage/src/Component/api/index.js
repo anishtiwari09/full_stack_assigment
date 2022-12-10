@@ -1,5 +1,6 @@
 import axios from "axios"
-const Base_Url=process.env.REACT_APP_Base_Url
+import { Base_Url } from "../../../config";
+
 
 
 export function getQuestionData(quizId,token){
