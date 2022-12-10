@@ -1,1 +1,0 @@
-export const Base_Url="http://3.88.164.93:8080/"
