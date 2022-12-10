@@ -1,6 +1,6 @@
 import axios from "axios"
 
-const Base_Url="https://3.88.164.93:8080/"
+const Base_Url="https://vercel-node-three-ruddy.vercel.app/"
 export function getQuestionData(quizId,token){
   
   var config = {
