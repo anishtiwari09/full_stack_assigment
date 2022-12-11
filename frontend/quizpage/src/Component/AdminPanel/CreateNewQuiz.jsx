@@ -116,14 +116,14 @@ const handleCloseModal=()=>{
     <div>
    
 {loading?<LoadingIndicator />:showError?<ErrorPageIndicator msg={errorMsg}/>:""}
-      <div style={{ display: "flex", gap: "0.5rem" }}>
+      <div style={{ display: "flex", gap: "0.8rem",marginBottom:20 }}>
         <div>Enter Quiz Unique Id:</div>
         <div>
-          <input type="text" placeholder="UniqueQuizId" ref={quizRef}/>
+          <input type="text" placeholder="UniqueQuizId" ref={quizRef} style={{height:40,borderRadius:5}}/>
         </div>
       </div>
     <div style={{display:"flex",gap:"1rem",justifyContent:"space-evenly",flexWap:"wrap"}}>
-    <div >
+   {selectedQuestionId?.length>0&& <div >
         <div><h4>Selected Question Id</h4></div>
     <div>
       <Table>
@@ -144,8 +144,8 @@ const handleCloseModal=()=>{
         </tbody>
       </Table>
     </div>
-      </div>
-      <div >
+      </div>}
+     {selectedUserId?.length>0&& <div >
         <div><h4>Selected User Id</h4></div>
     <div>
       <Table>
@@ -166,10 +166,10 @@ const handleCloseModal=()=>{
         </tbody>
       </Table>
     </div>
-      </div>
+      </div>}
     </div>
       <div>
-        <div><h1>Add Users</h1></div>
+        <div><h4>Add Users</h4></div>
         <div>
           <Table responsive="lg"  >
             <thead>
@@ -203,9 +203,9 @@ const handleCloseModal=()=>{
           </Table>
         </div>
       </div>
-      <div><div><h1>
-        Question Banks
-        </h1></div>
+      <div><div><h4>
+       Add Questions
+        </h4></div>
         <div>
          { <Table>
             <thead>
@@ -220,7 +220,7 @@ const handleCloseModal=()=>{
                   Question Type
                 </th>
                 <th>
-                  ""
+                 
                 </th>
               </tr>
             </thead>

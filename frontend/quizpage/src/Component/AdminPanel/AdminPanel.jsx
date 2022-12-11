@@ -30,7 +30,7 @@ export default function AdminPanel() {
 },[createQuiz])
   return (
     <>
-    <div>
+   {!createQuiz&& <div>
       <div><h3>Quiz List</h3></div>
       <Table>
         <thead>
@@ -56,7 +56,7 @@ export default function AdminPanel() {
           }
         </tbody>
       </Table>
-    </div>
+    </div>}
     {createQuiz?<CreateNewQuiz setCreateQuiz={setCreateQuiz}/>:<div>
         <div>
             <button onClick={handleCreateNewQuiz}>Create new Quiz</button>

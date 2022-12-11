@@ -1,6 +1,7 @@
 import React, { useContext } from 'react'
 import { Table } from 'react-bootstrap'
 import { AuthContext } from '../../Context/AuthContext'
+import GraphResult from './CommonQuizComponent/graphResult'
 
 export default function QuizResult({data}) {
     const {quizId}=useContext(AuthContext)
@@ -29,6 +30,10 @@ export default function QuizResult({data}) {
                 </tr>
             </tbody>
         </Table>
+        <div>
+            <h2>Graph</h2>
+            <GraphResult dataset={data?.data_varient||[]}/>
+        </div>
     </div>
   )
 }
